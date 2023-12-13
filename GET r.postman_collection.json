@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "fde7a42a-bec9-4085-8b7f-d9b35b24ba12",
+		"name": "GET r",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22116641"
+	},
+	"item": [
+		{
+			"name": "get_project infoby id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/{{api}}/get_project/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"{{api}}",
+						"get_project",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_projects list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}{{api}}/get_projects",
+					"host": [
+						"{{url}}{{api}}"
+					],
+					"path": [
+						"get_projects"
+					],
+					"query": [
+						{
+							"key": "N5clOtUWgAKnFXRmlmrY-qrc2zpYXhahlXpzkZJcj",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tarasevichartsiom.testrail.io/index.php?/api/v2/get_projects",
+					"protocol": "https",
+					"host": [
+						"tarasevichartsiom",
+						"testrail",
+						"io"
+					],
+					"path": [
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "/api/v2/get_projects",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{email}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url_base",
+			"value": "https://tarasevichartsiom.testrail.io",
+			"type": "string"
+		},
+		{
+			"key": "index",
+			"value": "/index.php?/api/v2",
+			"type": "string"
+		}
+	]
+}
