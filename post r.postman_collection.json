@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "a4b8b2db-58e7-4ed6-aa9d-269a56981bd9",
+		"name": "post r",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22116641"
+	},
+	"item": [
+		{
+			"name": "add_project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"artsiomtestpostCHECK\",\r\n    \"announcement\": \"Welcome to project artsiomtestpost\",\r\n    \"show_announcement\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}{{api}}/add_project",
+					"host": [
+						"{{url}}{{api}}"
+					],
+					"path": [
+						"add_project"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}{{api}}delete_project/11",
+					"host": [
+						"{{url}}{{api}}delete_project"
+					],
+					"path": [
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Artsio Update2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/{{api}}/update_project/7",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"{{api}}",
+						"update_project",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{email}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url_for_post",
+			"value": "https://tarasevichartsiom.testrail.io",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "index_post",
+			"value": "/index.php?/api/v2",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}
